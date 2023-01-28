@@ -21,6 +21,10 @@ app.get("/movies", (req, res) => {
   res.send({ movies: arr });
 });
 
+app.get("/shops", (req, res) => {
+  res.send("Hello Shop");
+});
+
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
